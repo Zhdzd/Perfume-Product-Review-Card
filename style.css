@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 20px;
+  max-width: 600px;
+}
+img {
+  max-width: 100%;
+}
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.1px);
+  background-color: hsl(30, 38%, 92%);
+}
+.container article:first-child img {
+  border-radius: 10px 10px 0 0;
+}
+.container article:last-child {
+  background-color: white;
+  margin-top: -4px;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: hsl(228, 12%, 48%);
+}
+.price {
+  color: hsl(158, 36%, 37%);
+}
+ul {
+  list-style-type: none;
+}
+button,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+.container ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container ul li:first-child {
+  font-size: 25px;
+  margin-right: 10px;
+}
+/*button*/
+.container .btn {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 8px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .btn:hover {
+  background-color: hsl(157, 47%, 32%);
+}
+.container .btn:active {
+  background-color: hsl(156, 59%, 16%);
+}
+.container .btn img {
+  padding-right: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container article:first-child img {
+    border-radius: 0.625rem 0 0 0.625rem;
+  }
+  .container article:last-child {
+    border-radius: 0 0.625rem 0.625rem 0;
+    margin-top: 0rem;
+  }
+  picture img {
+    height: 100%;
+  }
+}
